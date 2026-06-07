@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  background: linear-gradient(90deg, #09203f, #537895);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #09203f;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-task {
+  flex: 1;
+  padding: 8px;
+  height: 40px;
+  color: #fff;
+  background: #537895;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.input-task:focus {
+  outline: 2px solid #537895;
+}
+
+#taskInput::placeholder{
+  color: #fff;
+} 
+
+.add-task {
+  padding: 8px 16px;
+  height: 40px;
+  color: #fff;
+  background: #537895;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.add-task:hover {
+  background: #405d75;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  padding: 8px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
