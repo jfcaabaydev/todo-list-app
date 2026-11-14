@@ -29,7 +29,8 @@ button {
   background: #09203f;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  overflow-x: scroll;
+} 
 
 h1 {
   text-align: center;
@@ -89,6 +90,7 @@ p {
   padding: 8px;
   gap: 8px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
