@@ -29,7 +29,6 @@ button {
   background: #09203f;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow-x: scroll;
 } 
 
 h1 {
@@ -92,6 +91,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.container span {
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .completed {
